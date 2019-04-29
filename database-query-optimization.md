@@ -12,10 +12,14 @@
 * Disc RAID for parallel reading
 
 ## Processes
-* Actual optimizer statistics and and autovacuum effectiveness.
-* Long transactions or too much very short requests (N+1 issue)TODO
+* Actual optimizer statistics and autovacuum effectiveness.
+* Long transactions or too much very short requests (N+1 issue)
 * Batch insert/update/select instead of a single big and long request
+* Decreasing the size of tables (table bloat) due to a lot of updating operations
 
+## Settings
+* I/O costs
+* Available memory
 
 ## Indexes
 * New index
@@ -27,13 +31,26 @@
 * CLUSTER command to avoid hash index usage and to use index scan
 * Unique indexes in order to improve effectiveness of JOINS
 
+## Requests
+* Stored procedures to avoid too big network resources consumptions (connections, traffic, etc.)
+* CTE to cache a heavy requests in order to reuse results inside the different queries
+* CTE to execute a lot of queries at once
+* As short as possible transactions - less locks, less bloating
+* Background deleting - mark as deleted and actually delete by the separate background worker-process
+* INNER JOINs are better than LEFT/RIGHT JOINs (less rows to process)
+* Less table scannings (WINDOW functions)
+
 ## Infrastructure
 * Replication
 * Partitioning
 * Sharding
+* Master-master if it is a high-load processing of data and replication lag time is forbidden
+* Tables for the cold, warm and hot data and automatic data archieving
 
 ## Schema
 * Normalization - decrease amount of data and a weight of DB objects
 * Denormalization - decrease a number of JOINS
 * JSON/array data types - decrease amount of JOINED rows
-* 
+* Correct data types 
+* Avoid nullable fields if there is no suitable business valuable situation around such null logic
+* Separate database for future sharding - for example, separate database with the single table `statistics`
