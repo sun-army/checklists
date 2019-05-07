@@ -30,6 +30,7 @@
 * Corrupted indexes
 * CLUSTER command to avoid hash index usage and to use index scan
 * Unique indexes in order to improve effectiveness of JOINS
+* Rows visibility stats for the index only scan
 
 ## Requests
 * Stored procedures to avoid too big network resources consumptions (connections, traffic, etc.)
