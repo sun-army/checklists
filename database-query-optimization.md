@@ -16,6 +16,14 @@ Quick but very frequent queries | Automatically grep and parse PostgreSQL main l
 * EXPLAIN directive BUFFERS - I/O profiling
 
 
+## Optimization strategies
+
+* OLTP requests - index scan instead of Seq. scan for the JOINS, nested loop instead of Merge JOIN and Hash JOIN
+* No correlation requests and loops - use JOINS instead or CTE/stored procedures to calculate values beforehand
+* More memory I/O, less disk I/O - increase the work_mem, use indexes to decrease amount of data to process
+* More accurate statistics for the optimizer - vacuum processes monitoring
+
+
 ## Hardware
 * Global database settings like memory limits, write costs (ex. random page costs for PostgreSQL)
 * Resources monitoring - RAM and disc consumption, less disc more RAM.
