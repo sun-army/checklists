@@ -1,7 +1,19 @@
 # Database optimization
 
 ## Profiling
-* Profiling. Find a requests which are valuable for the business to optimize - most frequent / most impact to the performance / balance between profit and time required to optimize
+Goal - find a requests which are valuable for the business to optimize - most frequent / most impact to the performance / balance between profit and time required to optimize
+
+### A list of candidates
+Candidate | Process
+--- | ---
+Slow Backend application processing of business tasks | Observe related DB requests
+Slow queries | Enable slow query log
+Quick but very frequent queries | Automatically grep and parse PostgreSQL main log (or use special extensions, a research is required)
+
+### General tools
+* PostgreSQL log with extended request info => parse it automatically
+* Extensions like pg_stat_statements
+* EXPLAIN directive BUFFERS - I/O profiling
 
 
 ## Hardware
