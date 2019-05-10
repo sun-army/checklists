@@ -21,6 +21,9 @@
 * I/O costs
 * Available memory
 
+## Features
+* extended statistics
+
 ## Indexes
 * New index
 * Useless indexes should be deleted
