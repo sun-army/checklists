@@ -27,6 +27,7 @@ Quick but very frequent queries | Automatically grep and parse PostgreSQL main l
 ## Stored procedures and functions
 * IMMUTABLE, STABLE instead of VOLATILE - an ability to call a function at once and beforehand.
 * Function body with SELECT might be included directly to the request.
+* Get rid of the function because in some cases optimizer call function 'as-is' without such optimizations as filter pushdown
 
 
 ## Hardware
