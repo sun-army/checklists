@@ -24,6 +24,10 @@ Quick but very frequent queries | Automatically grep and parse PostgreSQL main l
 * More accurate statistics for the optimizer - vacuum processes monitoring
 
 
+## Stored procedures and functions
+* IMMUTABLE, STABLE instead of VOLATILE - an ability to call a function at once and beforehand.
+
+
 ## Hardware
 * Global database settings like memory limits, write costs (ex. random page costs for PostgreSQL)
 * Resources monitoring - RAM and disc consumption, less disc more RAM.
