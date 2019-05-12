@@ -14,4 +14,4 @@
 ## Monitoring of processes
 * PostgreSQL log for the errors
 * Slow query log
-* Autovacuum - does it work always. Should work from time to time.
+* Autovacuum - does it work always. Should work from time to time. A balance between tables bloat and resources consumed by autovacuum
