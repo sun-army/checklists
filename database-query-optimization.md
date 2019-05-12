@@ -42,6 +42,7 @@ Quick but very frequent queries | Automatically grep and parse PostgreSQL main l
 * Long transactions or too much very short requests (N+1 issue)
 * Batch insert/update/select instead of a single big and long request
 * Decreasing the size of tables (table bloat) due to a lot of updating operations
+* Buffer cache pre-warm after server restart
 
 ## Settings
 * I/O costs
