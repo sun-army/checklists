@@ -15,3 +15,6 @@
 * PostgreSQL log for the errors
 * Slow query log
 * Autovacuum - does it work always. Should work from time to time. A balance between tables bloat and resources consumed by autovacuum
+* Checkpoint - a balance between the time to restore and resources consumption for the checkpoint
+* Buffer pool dirty pages savings - should be done by the background writer and not by the backend query
+* Locks duration and deadlocks existence
