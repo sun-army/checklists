@@ -18,3 +18,7 @@
 * Checkpoint - a balance between the time to restore and resources consumption for the checkpoint
 * Buffer pool dirty pages savings - should be done by the background writer and not by the backend query
 * Locks duration and deadlocks existence
+
+## Replication
+* Lag
+* slot
