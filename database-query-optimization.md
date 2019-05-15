@@ -79,6 +79,10 @@ Quick but very frequent queries | Automatically grep and parse PostgreSQL main l
 * Master-master if it is a high-load processing of data and replication lag time is forbidden
 * Tables for the cold, warm and hot data and automatic data archieving
 
+## Replication
+* Parameters of sync
+* Sync quorum
+
 ## Schema
 * Normalization - decrease amount of data and a weight of DB objects
 * Denormalization - decrease a number of JOINS
