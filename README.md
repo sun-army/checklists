@@ -1,8 +1,11 @@
-# checklists
-The checklists to help to build the correct IT-related processes
+# Sun Army checklists
 
+Repository contains a lot of checklists for the different processes
 
 Table of contents
-
-
-[Admin panel and statistics (RU)](https://docs.google.com/document/d/1qXaTsskihxe6N4Y5Pb7J6-lgmzOTJZGdjpMBURbRAY0/edit)
+* [Application](./application)
+* [Architecture](./architecture)
+* [Databases](./databases)
+* [DevOps](./dev-ops)
+* [Project management](./project-management)
+* [Quality assurance (testing)](./qa)
