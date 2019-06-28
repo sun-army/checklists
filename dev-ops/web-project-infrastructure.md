@@ -46,5 +46,5 @@
 * IP and DOS protection CDN like CloudFlare
 * Queue services like RabbitMQ
 * 3rd party services and API like blockchain
-
+* Load balancing and availability balancing via HAProxy (custom business rules)
 
