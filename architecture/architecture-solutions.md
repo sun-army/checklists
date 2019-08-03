@@ -8,7 +8,3 @@
 Example:
 * `users_activity` table to store all events - insert only, no deleting.
 * `users_activity_follow` table to store a last state of related activity
-
-TODO 
-- add more details
-- add more solutions
